@@ -142,7 +142,7 @@ To exit the program, you can use the exit or quit commands. <br  />
 <br  />
 
 > [!IMPORTANT]
-Given the right path, this program cannot only execute external commands, it can execute any binary executable file. The provided ``[test_segfaulting_command.exe]`` file provided in this repository, is provided to verify that the program can run and check for segfaults in an executed program. To test this feature, execute``[test_segfaulting_command.exe]``.  <br  />
+Given the right path, this program cannot only execute external commands, it can execute any binary executable file. The provided ``[test_segfaulting.exe]`` file provided in this repository, is provided to verify that the program can run and check for segfaults in an executed program. To test this feature, execute``[test_segfaulting.exe]``.  <br  />
 
   
 

@@ -42,7 +42,7 @@ Some commands are considered built-in to this shell, while the system you are ru
 
 ```sh
 
-which [command]
+$>which [command]
 
 ```
 
@@ -56,7 +56,7 @@ For example:<br  />
 
 ```sh
 
-which  ls
+$>which  ls
 
 ```
 
@@ -78,7 +78,7 @@ Alternatively: <br  />
 
 ```sh
 
-which [echo]
+$>which [echo]
 
 ```
 
@@ -178,7 +178,7 @@ Segfault
 
 ```sh
 
-make
+$>make
 
 ```
 
@@ -188,7 +188,7 @@ make
 
 ```sh
 
-./my_shell.exe
+$>./my_shell.exe
 
 ```
 

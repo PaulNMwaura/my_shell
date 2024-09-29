@@ -1,6 +1,7 @@
 # MY SHELL
 
-  
+>[!WARNING]
+>This program is made specifically for Linux systems.
 
 ## Overview
 

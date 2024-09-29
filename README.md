@@ -1,6 +1,7 @@
 # MY SHELL
 
-  
+>[!WARNING]
+>This program is made specifically for Linux systems.
 
 ## Overview
 
@@ -31,7 +32,7 @@ The shell supports the following built-in commands: <br  />
 
   
 
-Additionally, the shell can execute any external command available on the system using the execve() function. For example, on Linux, the shell can run commands like ls, and on Windows, it can run dir, provided these commands are available as executables on the system.
+Additionally, the shell can execute any external command available on the system using the execve() function. For example, on Linux, the shell can run commands like ls, and other commands provided that they are available as executables on the system.
 
   
 
@@ -41,13 +42,13 @@ Some commands are considered built-in to this shell, while the system you are ru
 
 ```sh
 
-which [command]
+$>which [command]
 
 ```
 
-If which returns a path (e.g., /bin/ls), the command is recognized as an external binary executable program.
+If which returns a path (e.g., /bin/ls), the command is recognized as external.
 
-If which does not return a path and instead gives an error, the command is either a built-in shell command or an invalid command. <br  />
+If which does **not** return a path and/or gives an error, the command is either a built-in shell command or an invalid command respectively. <br  />
 
 For example:<br  />
 
@@ -55,7 +56,7 @@ For example:<br  />
 
 ```sh
 
-which  ls
+$>which  ls
 
 ```
 
@@ -77,7 +78,7 @@ Alternatively: <br  />
 
 ```sh
 
-which [echo]
+$>which [echo]
 
 ```
 
@@ -136,12 +137,12 @@ To exit the program, you can use the exit or quit commands. <br  />
 
 > [!NOTE] 
 > The execve() function is used for external commands. The program is able to run any valid executables available on the system.
-The shell only supports basic functionality for the built-in commands and does not handle advanced shell scripting or piping.
+**The shell only supports basic functionality for the built-in commands and does not handle advanced shell scripting or piping**.
 
 <br  />
 
 > [!IMPORTANT]
-Given the right path, this program cannot only execute external commands, it can execute any binary executable file. The provided ``[test_segfault_command.exe]`` file provided in this repository, is provided to verify that the program can run and check for segfaults in an executed program. To test this feature, execute``[test_segfault_command.exe]``.  <br  />
+Given the right path, this program cannot only execute external commands, it can execute any binary executable file. The provided ``[test_segfaulting.exe]`` file provided in this repository, is provided to verify that the program can run and check for segfaults in an executed program. To test this feature, execute``[test_segfaulting.exe]``.  <br  />
 
   
 
@@ -153,7 +154,7 @@ $>./test_segfaulting.exe
 
 ```
 
-##### Output: <br  />
+##### Expected Output: <br  />
 
   
 
@@ -177,7 +178,7 @@ Segfault
 
 ```sh
 
-make
+$>make
 
 ```
 
@@ -187,7 +188,7 @@ make
 
 ```sh
 
-./my_shell.exe
+$>./my_shell.exe
 
 ```
 
